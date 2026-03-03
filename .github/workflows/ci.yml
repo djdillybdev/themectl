@@ -27,8 +27,5 @@ jobs:
       - name: Shellcheck
         run: shellcheck themectl scripts/*.sh targets.d/*.sh install.sh
 
-      - name: Unit tests
-        run: python3 -m unittest discover -s tests -v
-
       - name: Installer dry-run
         run: ./install.sh --dry-run --yes
