@@ -1,0 +1,41 @@
+{
+  "id": "735750",
+  "family": "generated",
+  "variant": "dark",
+  "toggle_group": "generated-main",
+  "colors": {
+    "rosewater": "#e6e6e2",
+    "flamingo": "#45979a",
+    "pink": "#8dbad0",
+    "mauve": "#8dbad0",
+    "red": "#45979a",
+    "maroon": "#749899",
+    "peach": "#a39999",
+    "yellow": "#a39999",
+    "green": "#658e8d",
+    "teal": "#aac5dc",
+    "sky": "#aac5dc",
+    "sapphire": "#d1c8ad",
+    "blue": "#d1c8ad",
+    "lavender": "#658e8d",
+    "text": "#e6e6e2",
+    "subtext1": "#c3c3c4",
+    "subtext0": "#adaeb1",
+    "overlay2": "#8f9098",
+    "overlay1": "#767882",
+    "overlay0": "#5e606b",
+    "surface2": "#4b4d59",
+    "surface1": "#373a48",
+    "surface0": "#242736",
+    "base": "#0c0f20",
+    "mantle": "#0a0d1c",
+    "crust": "#090b18"
+  },
+  "source": {
+    "type": "image",
+    "image_path": "/home/dillybean/Pictures/Wallpapers/735750.png",
+    "backend": "wal",
+    "generated_at": "2026-02-25T21:34:24.618423+01:00",
+    "variant_mode": "auto"
+  }
+}

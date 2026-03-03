@@ -1,0 +1,41 @@
+{
+  "id": "undefined---imgur-15",
+  "family": "generated",
+  "variant": "dark",
+  "toggle_group": "generated-main",
+  "colors": {
+    "rosewater": "#c5c3dc",
+    "flamingo": "#7775c5",
+    "pink": "#798abf",
+    "mauve": "#798abf",
+    "red": "#7775c5",
+    "maroon": "#8f74ad",
+    "peach": "#a77396",
+    "yellow": "#a77396",
+    "green": "#8c7190",
+    "teal": "#a38eac",
+    "sky": "#a38eac",
+    "sapphire": "#b777ab",
+    "blue": "#b777ab",
+    "lavender": "#8c7190",
+    "text": "#c5c3dc",
+    "subtext1": "#b0aec0",
+    "subtext0": "#a3a1ae",
+    "overlay2": "#918f96",
+    "overlay1": "#79777f",
+    "overlay0": "#615f68",
+    "surface2": "#4e4b56",
+    "surface1": "#3b3844",
+    "surface0": "#272531",
+    "base": "#100d1b",
+    "mantle": "#0e0b17",
+    "crust": "#0c0914"
+  },
+  "source": {
+    "type": "image",
+    "image_path": "/home/dillybean/Pictures/Wallpapers/undefined - Imgur(15).jpg",
+    "backend": "wal",
+    "generated_at": "2026-02-25T21:56:45.328402+01:00",
+    "variant_mode": "auto"
+  }
+}

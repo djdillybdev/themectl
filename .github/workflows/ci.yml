@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  shell-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq shellcheck
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Shell syntax
+        run: bash -n themectl scripts/*.sh targets.d/*.sh install.sh
+
+      - name: Shellcheck
+        run: shellcheck themectl scripts/*.sh targets.d/*.sh install.sh
+
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Installer dry-run
+        run: ./install.sh --dry-run --yes

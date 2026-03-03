@@ -1,0 +1,44 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$line_break\
+$python\
+$character"""
+palette = "catppuccin_active"
+add_newline = false
+
+[directory]
+style = "fg:blue"
+format = "[$path]($style) "
+
+[character]
+success_symbol = "[ ](bold fg:lavender)[❯](fg:mauve)"
+error_symbol = "[ ](fg:peach)[❯](fg:red)"
+vimcmd_symbol = "[ ](fg:lavender)[❮](fg:green)"
+format = "$symbol "
+
+[git_branch]
+format = "[$branch]($style) "
+style = "fg:mauve"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style) )"
+style = "fg:peach"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "fg:overlay1"
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "fg:yellow"
+
+[python]
+format = "[$virtualenv]($style) "
+style = "fg:overlay1"

@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "target": "gtk",
+  "templates": {
+    "templates/gtk/current-theme.css.tmpl": "$HOME/.config/gtk-3.0/current-theme.css"
+  },
+  "required_roles": [],
+  "reload": {
+    "enabled": false,
+    "command": "",
+    "mode_hint": "none"
+  },
+  "capabilities": {
+    "reload_mode_supported": [
+      "sync"
+    ],
+    "session_scope": "user",
+    "health_check": ""
+  },
+  "validate": [
+    "gtk.css imports current-theme.css"
+  ]
+}

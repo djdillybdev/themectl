@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "target": "rofi",
+  "templates": {
+    "templates/rofi/current-palette.rasi.tmpl": "$HOME/.config/rofi/current-palette.rasi"
+  },
+  "required_roles": [],
+  "reload": {
+    "enabled": false,
+    "command": "",
+    "mode_hint": "none"
+  },
+  "validate": [
+    "rofi config imports themed palette"
+  ]
+}

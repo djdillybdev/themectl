@@ -1,0 +1,52 @@
+{
+  "id": "548852",
+  "family": "generated",
+  "variant": "dark",
+  "toggle_group": "generated-main",
+  "colors": {
+    "rosewater": "#414d75",
+    "flamingo": "#45537e",
+    "pink": "#6e77aa",
+    "mauve": "#477db9",
+    "red": "#938862",
+    "maroon": "#404a68",
+    "peach": "#9295ce",
+    "yellow": "#b9b5d4",
+    "green": "#445439",
+    "teal": "#6e84c3",
+    "sky": "#4b5a85",
+    "sapphire": "#4d5f94",
+    "blue": "#50679f",
+    "lavender": "#5b6fa4",
+    "text": "#d0dcc8",
+    "subtext1": "#b0bca8",
+    "subtext0": "#97a390",
+    "overlay2": "#798472",
+    "overlay1": "#626d5b",
+    "overlay0": "#4f5948",
+    "surface2": "#374131",
+    "surface1": "#2a3424",
+    "surface0": "#212a1a",
+    "base": "#11190b",
+    "mantle": "#0a1205",
+    "crust": "#050c02"
+  },
+  "source": {
+    "type": "image",
+    "image_path": "/home/dillybean/Pictures/Wallpapers/548852.jpg",
+    "backend": "catppuccin",
+    "generated_at": "2026-02-26T13:04:35.530745+01:00",
+    "variant_mode": "auto",
+    "params": {
+      "contrast": "balanced",
+      "pastel": 0.35,
+      "extractor": "minibatch_kmeans_oklab",
+      "cluster_count": 24,
+      "sample_size": 24000,
+      "mapping_mode": "adaptive_semantic",
+      "diversity_mode": "balanced",
+      "accent_pool_size": 14,
+      "synthetic_accent_count": 0
+    }
+  }
+}

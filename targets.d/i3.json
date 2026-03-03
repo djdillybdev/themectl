@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "target": "i3",
+  "templates": {
+    "templates/i3/current-theme.conf.tmpl": "$HOME/.config/i3/current-theme.conf"
+  },
+  "required_roles": [
+    "i3.focused_border",
+    "i3.unfocused_border",
+    "i3.focused_inactive_border"
+  ],
+  "reload": {
+    "enabled": true,
+    "command": "i3-msg reload",
+    "mode_hint": "sync"
+  },
+  "validate": [
+    "i3/config includes current-theme.conf"
+  ]
+}

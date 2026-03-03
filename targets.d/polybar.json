@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "target": "polybar",
+  "templates": {
+    "templates/polybar/current-theme.ini.tmpl": "$HOME/.config/polybar/current-theme.ini"
+  },
+  "required_roles": [],
+  "reload": {
+    "enabled": true,
+    "command": "pkill -USR1 polybar || ~/.config/polybar/launch.sh",
+    "mode_hint": "async"
+  },
+  "validate": [
+    "polybar/config.ini includes current-theme.ini"
+  ]
+}

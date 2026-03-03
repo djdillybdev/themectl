@@ -1,0 +1,39 @@
+set $rosewater {{rosewater}}
+set $flamingo {{flamingo}}
+set $pink {{pink}}
+set $mauve {{mauve}}
+set $red {{red}}
+set $maroon {{maroon}}
+set $peach {{peach}}
+set $yellow {{yellow}}
+set $green {{green}}
+set $teal {{teal}}
+set $sky {{sky}}
+set $sapphire {{sapphire}}
+set $blue {{blue}}
+set $lavender {{lavender}}
+set $text {{text}}
+set $subtext1 {{subtext1}}
+set $subtext0 {{subtext0}}
+set $overlay2 {{overlay2}}
+set $overlay1 {{overlay1}}
+set $overlay0 {{overlay0}}
+set $surface2 {{surface2}}
+set $surface1 {{surface1}}
+set $surface0 {{surface0}}
+set $base {{base}}
+set $mantle {{mantle}}
+set $crust {{crust}}
+set $i3_focused_border {{role:ui.focus.focused_border}}
+set $i3_unfocused_border {{role:ui.focus.unfocused_border}}
+set $i3_focused_inactive_border {{role:ui.focus.inactive_border}}
+
+set $none #000000
+
+# target                 title     bg    text   indicator  border
+client.focused           $i3_focused_border          $base $text  $rosewater $i3_focused_border
+client.focused_inactive  $i3_focused_inactive_border $base $text  $rosewater $i3_focused_inactive_border
+client.unfocused         $i3_unfocused_border        $base $text  $rosewater $i3_unfocused_border
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0 $overlay0
+client.background        $base

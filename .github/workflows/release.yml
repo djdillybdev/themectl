@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq shellcheck
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify
+        run: |
+          bash -n themectl scripts/*.sh targets.d/*.sh install.sh
+          shellcheck themectl scripts/*.sh targets.d/*.sh install.sh
+          python3 -m unittest discover -s tests -v
+          ./install.sh --dry-run --yes
+
+      - name: Build checksums
+        run: sha256sum themectl install.sh > SHA256SUMS
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            themectl
+            install.sh
+            SHA256SUMS

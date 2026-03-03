@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "target": "starship",
+  "templates": {
+    "templates/starship/palette.toml.tmpl": "$HOME/.config/starship.toml"
+  },
+  "required_roles": [],
+  "reload": {
+    "enabled": false,
+    "command": "",
+    "mode_hint": "none"
+  },
+  "validate": [
+    "starship base template exists"
+  ]
+}

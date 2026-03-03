@@ -1,0 +1,193 @@
+{
+  "version": 3,
+  "contract": {
+    "required_roles": [
+      "bg",
+      "fg",
+      "cursor",
+      "selection_bg",
+      "selection_fg",
+      "muted",
+      "suggestion",
+      "border",
+      "overlay",
+      "surface0",
+      "surface1",
+      "surface2",
+      "accent0",
+      "accent1",
+      "accent2",
+      "error",
+      "warn",
+      "ok",
+      "info",
+      "ansi0",
+      "ansi1",
+      "ansi2",
+      "ansi3",
+      "ansi4",
+      "ansi5",
+      "ansi6",
+      "ansi7",
+      "ansi8",
+      "ansi9",
+      "ansi10",
+      "ansi11",
+      "ansi12",
+      "ansi13",
+      "ansi14",
+      "ansi15"
+    ]
+  },
+  "adapters": {
+    "catppuccin26": {
+      "map": {
+        "bg": "base",
+        "fg": "text",
+        "accent0": "mauve",
+        "accent1": "lavender",
+        "accent2": "teal",
+        "error": "red",
+        "warn": "yellow",
+        "ok": "green",
+        "info": "blue"
+      }
+    },
+    "base16": {
+      "map": {
+        "bg": "base00",
+        "fg": "base05",
+        "accent0": "base0E",
+        "accent1": "base0D",
+        "accent2": "base0C",
+        "error": "base08",
+        "warn": "base0A",
+        "ok": "base0B",
+        "info": "base0D"
+      }
+    },
+    "base24": {
+      "map": {
+        "bg": "base00",
+        "fg": "base05",
+        "ansi8": "base10",
+        "ansi9": "base11",
+        "ansi10": "base12",
+        "ansi11": "base13",
+        "ansi12": "base14",
+        "ansi13": "base15",
+        "ansi14": "base16",
+        "ansi15": "base17"
+      }
+    },
+    "pywal": {
+      "map": {
+        "bg": "background",
+        "fg": "foreground",
+        "cursor": "cursor",
+        "ansi0": "color0",
+        "ansi15": "color15"
+      }
+    },
+    "ansi16": {
+      "map": {
+        "ansi0": "color0",
+        "ansi1": "color1",
+        "ansi2": "color2",
+        "ansi3": "color3",
+        "ansi4": "color4",
+        "ansi5": "color5",
+        "ansi6": "color6",
+        "ansi7": "color7",
+        "ansi8": "color8",
+        "ansi9": "color9",
+        "ansi10": "color10",
+        "ansi11": "color11",
+        "ansi12": "color12",
+        "ansi13": "color13",
+        "ansi14": "color14",
+        "ansi15": "color15"
+      }
+    },
+    "terminal_sexy": {
+      "map": {
+        "bg": "background",
+        "fg": "foreground",
+        "cursor": "cursor",
+        "ansi0": "color0",
+        "ansi15": "color15"
+      }
+    }
+  },
+  "derivation": {
+    "require": [
+      "bg",
+      "fg",
+      "accent0"
+    ],
+    "states": {
+      "fallback": {
+        "error": "#d20f39",
+        "warn": "#df8e1d",
+        "ok": "#40a02b",
+        "info": "#1e66f5"
+      }
+    },
+    "ansi": {
+      "strategy": "semantic_seed_then_fill"
+    }
+  },
+  "role_sets": {
+    "core": {
+      "ui.bg.primary": "bg",
+      "ui.bg.elevated": "surface0",
+      "ui.fg.primary": "fg",
+      "ui.fg.muted": "muted",
+      "ui.fg.suggestion": "suggestion",
+      "ui.accent.primary": "accent0",
+      "ui.accent.secondary": "accent1",
+      "ui.state.success": "ok",
+      "ui.state.warning": "warn",
+      "ui.state.danger": "error",
+      "ui.focus.focused_border": "accent0",
+      "ui.focus.unfocused_border": "surface0",
+      "ui.focus.inactive_border": "surface1"
+    },
+    "i3": {
+      "i3.focused_border": "ui.focus.focused_border",
+      "i3.unfocused_border": "ui.focus.unfocused_border",
+      "i3.focused_inactive_border": "ui.focus.inactive_border"
+    }
+  },
+  "defaults": {
+    "ui.fg.suggestion": "suggestion",
+    "ui.focus.focused_border": "accent0",
+    "ui.focus.unfocused_border": "surface0",
+    "ui.focus.inactive_border": "surface1",
+    "i3.focused_border": "ui.focus.focused_border",
+    "i3.unfocused_border": "ui.focus.unfocused_border",
+    "i3.focused_inactive_border": "ui.focus.inactive_border"
+  },
+  "rules": [
+    {
+      "match": {
+        "family": "catppuccin",
+        "variant": "light"
+      },
+      "set": {
+        "ui.focus.unfocused_border": "pink",
+        "ui.focus.inactive_border": "pink"
+      }
+    },
+    {
+      "match": {
+        "family": "catppuccin",
+        "variant": "dark"
+      },
+      "set": {
+        "ui.focus.unfocused_border": "green",
+        "ui.focus.inactive_border": "green"
+      }
+    }
+  ]
+}

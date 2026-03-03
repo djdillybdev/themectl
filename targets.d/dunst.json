@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "target": "dunst",
+  "templates": {
+    "templates/dunst/current-theme.conf.tmpl": "$HOME/.config/dunst/current-theme.conf"
+  },
+  "required_roles": [],
+  "reload": {
+    "enabled": true,
+    "command": "dunstctl reload",
+    "mode_hint": "async"
+  },
+  "validate": [
+    "dunst base config exists"
+  ]
+}

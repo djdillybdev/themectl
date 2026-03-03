@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local caches/state
+.cache/
+state.json
+config.json
+generate-profiles.json
+
+# Local env
+.venv/
+
+# Release artifacts
+SHA256SUMS
+

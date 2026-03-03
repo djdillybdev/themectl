@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "target": "kitty",
+  "templates": {
+    "templates/kitty/current-theme.conf.tmpl": "$HOME/.config/kitty/current-theme.conf",
+    "templates/kitty/current-colors.conf.tmpl": "$HOME/.config/kitty/current-colors.conf"
+  },
+  "required_roles": [],
+  "reload": {
+    "enabled": true,
+    "command": "kitty @ load-config",
+    "mode_hint": "async"
+  },
+  "validate": [
+    "kitty.conf includes current-theme.conf",
+    "kitty remote control is enabled"
+  ]
+}

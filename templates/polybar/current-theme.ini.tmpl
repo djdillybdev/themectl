@@ -1,0 +1,196 @@
+[colors]
+rosewater = {{rosewater}}
+flamingo = {{flamingo}}
+pink = {{pink}}
+mauve = {{mauve}}
+red = {{red}}
+maroon = {{maroon}}
+peach = {{peach}}
+yellow = {{yellow}}
+green = {{green}}
+teal = {{teal}}
+sky = {{sky}}
+sapphire = {{sapphire}}
+blue = {{blue}}
+lavender = {{lavender}}
+text = {{text}}
+subtext1 = {{subtext1}}
+subtext0 = {{subtext0}}
+overlay2 = {{overlay2}}
+overlay1 = {{overlay1}}
+overlay0 = {{overlay0}}
+surface2 = {{surface2}}
+surface1 = {{surface1}}
+surface0 = {{surface0}}
+base = {{base}}
+mantle = {{mantle}}
+crust = {{crust}}
+transparent = #FF000000
+
+background = ${colors.base}
+background-alt = ${colors.mantle}
+foreground = ${colors.text}
+foreground-alt = ${colors.crust}
+primary = ${colors.mauve}
+secondary = ${colors.peach}
+alert = ${colors.red}
+muted = ${colors.overlay0}
+success = ${colors.green}
+warning = ${colors.yellow}
+danger = ${colors.red}
+
+[ui]
+accent = ${colors.mauve}
+bar-bg = ${colors.base}
+bar-fg = ${colors.text}
+bar-line = ${colors.mauve}
+bar-border = ${colors.mantle}
+block-bg = ${colors.base}
+block-fg = ${colors.text}
+block-outline = ${colors.mauve}
+block-muted = ${colors.overlay0}
+block-separator = ${colors.overlay1}
+
+[wm]
+margin-top = 10
+margin-bottom = 0
+
+[spacing]
+none = 0
+tight = 1
+normal = 2
+module-gap = 1
+
+[spacing-px]
+tight = 1px
+normal = 2px
+wide = 6px
+
+[fonts-top]
+font-0 = DepartureMono Nerd Font Mono:style=Regular:size=12;2
+font-1 = DepartureMono Nerd Font Mono:style=Regular:size=18;0
+font-2 = FontAwesome:style=Regular:size=16;12
+font-3 = Weather Icons:size=14;-2
+font-4 = Source Code Pro:size=14;0
+font-5 = DepartureMono Nerd Font Propo:style=Regular:size=16;2
+
+[fonts-bottom]
+font-0 = KoHo SemiBold:style=Regular:size=12;0
+font-1 = Unifont:size=10:style=Medium;0
+font-2 = FontAwesome:style=Regular:size=14
+font-3 = Weather Icons:size=14;1
+
+[bar-top]
+gap = 6px
+gap-size = 14
+background = ${ui.bar-bg}
+foreground = ${ui.bar-fg}
+height = 32
+radius = 0
+line-size = 2
+line-color = ${ui.bar-line}
+border-size = 1
+border-color = ${ui.bar-border}
+padding-left = 2
+padding-right = 2
+module-margin-left = ${spacing.module-gap}
+module-margin-right = ${spacing.module-gap}
+
+[bar-top-tray]
+padding = ${spacing-px.tight}
+size = 60%
+spacing = ${spacing-px.tight}
+background = ${ui.bar-bg}
+
+[bar-bottom]
+background = ${colors.background}
+foreground = ${colors.foreground}
+height = 30
+radius = 0
+line-size = 3
+line-color = ${colors.red}
+border-size = 2
+border-color = ${colors.background-alt}
+padding-left = 2
+padding-right = 2
+module-margin-left = ${spacing.module-gap}
+module-margin-right = ${spacing.module-gap}
+
+[bar-bottom-tray]
+padding = 1
+max-icons = 6
+transparent = false
+background = ${colors.background}
+
+[block]
+bg = ${ui.block-bg}
+fg = ${ui.block-fg}
+pad = 1
+gap = 6px
+icon-pad = 1
+
+[i3block]
+bg = ${ui.block-bg}
+fg = ${ui.block-fg}
+pad = 1
+gap = 1px
+icon-pad = 1
+separator-fg = ${ui.block-muted}
+focused-underline = ${ui.accent}
+visible-underline = ${colors.lavender}
+urgent-underline = ${colors.alert}
+mode-underline = ${ui.block-separator}
+
+[module-prefix]
+font = 6
+padding = ${block.icon-pad}
+xwindow-fg = ${colors.sapphire}
+filesystem-fg = ${colors.sapphire}
+cpu-fg = ${colors.mauve}
+memory-fg = ${colors.lavender}
+date-fg = ${colors.green}
+temperature-fg = ${colors.peach}
+updates-fg = ${colors.flamingo}
+
+[module-audio]
+label-fg = ${colors.foreground}
+muted-fg = ${colors.muted}
+ramp-fg = ${colors.teal}
+bar-empty-fg = ${colors.foreground-alt}
+bar-foreground-0 = ${colors.green}
+bar-foreground-1 = ${colors.green}
+bar-foreground-2 = ${colors.green}
+bar-foreground-3 = ${colors.green}
+bar-foreground-4 = ${colors.yellow}
+bar-foreground-5 = ${colors.yellow}
+bar-foreground-6 = ${colors.yellow}
+bar-foreground-7 = ${colors.red}
+bar-foreground-8 = ${colors.red}
+bar-foreground-9 = ${colors.red}
+
+[module-memory]
+bar-foreground-0 = ${colors.green}
+bar-foreground-1 = ${colors.teal}
+bar-foreground-2 = ${colors.yellow}
+bar-foreground-3 = ${colors.red}
+bar-indicator-fg = ${colors.text}
+bar-empty-fg = ${colors.overlay0}
+
+[module-network]
+wlan-underline = ${colors.lavender}
+eth-underline = ${colors.green}
+label-bg = ${colors.background}
+ramp-fg = ${colors.foreground-alt}
+prefix-fg = ${colors.foreground-alt}
+
+[module-temp]
+warn-underline = ${colors.alert}
+warn-fg = ${colors.secondary}
+
+[module-mpd]
+format-line = ${bar-top.background}
+progress-indicator-fg = ${colors.foreground}
+progress-fill-fg = ${colors.foreground-alt}
+progress-empty-fg = ${colors.background-alt}
+toggle-on-fg = ${colors.foreground}
+toggle-off-fg = ${colors.foreground-alt}
